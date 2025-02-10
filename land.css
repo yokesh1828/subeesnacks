@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.home{
+    width: 100vw;
+}
+body{
+    height: 530vh;
+    width: 100vw;
+    background: rgb(10,3,36);
+    background: linear-gradient(32deg, rgb(0, 0, 0) 3%, rgb(0, 0, 0) 78%, rgba(102,45,14,1) 99%);
+    font-family: Poppins;
+    color: white;
+    overflow-x: hidden;
+}
+.top{
+    position: sticky;
+    position: fixed;
+    width: 100vw;
+    background: #00000063;
+    backdrop-filter: blur(6px);
+}
+.logo{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 25px;
+    width: 30px;
+}
+.top{
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100vw;
+}
+ul{
+    display: inline;
+    display: flex;
+    list-style: none;
+}
+li{
+    margin-left: 50px;
+}
+button{
+
+    height: 30px;
+    width: 120px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: tomato;
+    color: white;
+    font-family: Poppins;
+
+
+}
+.download button{
+    width: 80px;
+}
+
+.center button{
+     background-color: rgb(32, 32, 32);
+     width: 170px;
+     border: 1px solid;
+     border-color: rgb(89, 88, 88);
+    margin-top: 130px;
+    }
+.center{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+}
+.ench{
+    margin-top:20px;
+}
+.lorem{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+    color: rgb(97, 96, 96);
+}
+.end{
+    text-align: center;
+    margin-top: 20px;
+}
+.end button{
+    height: 35px;
+    width: 150px;
+}
+li:hover{
+    color: brown;
+    cursor: pointer;
+}
+.download button:hover{
+    cursor: pointer;
+
+}
+h2{
+    font-size: 60px;
+    font-family:Satisfy;
+    text-align: center;
+    color: rgb(226, 166, 13);
+}
+a{
+    all: unset;
+    margin-left: 50px;
+}
+a:hover{
+    color: brown;
+    cursor: pointer;
+}
+.box img{
+    height: 275px;
+    width: 275px;
+    border-radius: 8px;
+}
+.box{
+    border: solid 3px;
+    border-color: rgb(193, 183, 183);
+    border-radius: 8px;
+    width: 275px;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 15px;
+    
+}
+.box p{
+    text-align: center;
+    padding: 12px;
+}
+.align{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.align2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box button{
+    background-color: goldenrod;
+    color:  black;
+    width: 80px;
+    border-radius: 15px;
+}
+.box:hover{
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+.box button:hover{
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+}
+.snacks{
+    border-top: 180px solid transparent;
+}
+.about{
+    border-top: 180px solid transparent;
+}
+h3{
+    font-family: Satisfy;
+    font-size: 70px;
+    margin-top: 10px;
+    color: rgb(239, 205, 13);
+}
+.about p{
+    margin-top: 60px;
+    width: 500px;
+    font-size: 20px;
+}
+.contact h3{
+    text-align: center;
+    margin-top: 170px;
+    color: gold;
+}
+.contact{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact input{
+    padding: 20px;
+    width: 600px;
+}
+.contact .searchbar{
+    padding: 8px;
+}
+.contact button{
+    background-color:goldenrod;
+    color:black;
+    height: 30px;
+    width: 90px;
+}
+.contact button:hover{
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+}
+.logo,.menu{
+    padding: 25px;
+}
+.menuicon{
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+@media screen and (max-width:767px){
+    .center button{
+        margin-top: 200px;
+    }
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        padding: 10px 60px;
+        right: -305px;
+        top: 73.5px;
+        height: 80vh;
+        background: #00000083;
+        backdrop-filter: blur(6px);
+        transition: all 500ms;
+    }
+    .dropdown a,.dropdown span{
+        margin: auto;
+    }
+    .dropdown a:hover,.dropdown span:hover{
+        color: gold;
+    }
+    .dropdown.show{
+        right: 5px;
+    }
+    .menuicon{
+        display: block;
+        margin: 0 15px;
+    }
+    .snacks,.about,.contact{
+        width: 100vw;
+        border-top: 80px solid transparent;
+
+    }
+    .ench h1{
+        font-size: 27px;
+        justify-content:center;
+    }
+    .download button{
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+        margin: 0 10px;
+    }
+    .ench{
+        margin-top: 30px;
+    }
+    .lorem p{
+        font-size: 15px;
+        margin: 0 40px;
+    }
+    .lorem{
+        margin-top: 50px;
+    }
+    .end button{
+        margin-top: 30px;
+    }
+    .snacks h2{
+        font-size: 40px;
+        color: rgb(238, 175, 15);
+    }
+    .snacks .box{
+        width: 130px;
+        height: 240px;
+    }
+    .box{
+        margin: 13px 5px;
+        padding: 5px;
+        width: 205px;
+    }
+    .snacks img{
+        height: 100px;
+        width: 100px;
+    }
+    .about h3{
+        font-size: 40px;
+        color: rgb(238, 173, 8);
+
+    }
+    .about p{
+        font-size: 15px;
+        width: 180px;
+    }
+    .contact h3{
+        font-size: 40px;
+        color: rgb(226, 164, 5);
+    }
+    .contact input{
+        padding: 7px;
+        width: 250px;
+        outline: none;
+        border-radius: 7px;
+    }
+    .contact .searchbar{
+        padding: 3px;
+    }
+    body{
+        height: 450vh;
+        width: 100vw;
+    }
+    .contact h3{
+        margin-bottom: 25px;
+    }
+    .contact button{
+        margin-top: 4px;
+    }
+    a{
+        margin-left: 0;
+    }
+    nav{
+        display: none;
+    }
+    .top{
+        width: 100vw;
+
+    }
+    .download{
+        display: none;
+    }
+    .menux {
+        --s: 20px; /* control the size */
+        --c: rgb(255, 255, 255); /* the color */
+        
+        height: var(--s);
+        aspect-ratio: 1;
+        border: none;
+        padding: 0;
+        border-inline: calc(var(--s)/2) solid #0000; 
+        box-sizing: content-box;
+        --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0) 
+               no-repeat content-box border-box;
+        --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) 
+               repeat-y content-box border-box;
+        background: 
+          var(--_g2) left  var(--_p,0px) top,
+          var(--_g1) left  calc(var(--s)/10 + var(--_p,0px)) top,
+          var(--_g2) right var(--_p,0px) top,
+          var(--_g1) right calc(var(--s)/10 + var(--_p,0px)) top;
+        background-size: 
+          20% 80%,
+          40% 100%;
+        position: relative;
+        clip-path: inset(0 25%);
+        -webkit-mask: linear-gradient(90deg,#0000,#000 25% 75%,#0000);
+        cursor: pointer;
+        transition: 
+          background-position .3s var(--_s,.3s), 
+          clip-path 0s var(--_s,.6s);
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        appearance:none;
+      }
+      .menux:before,
+      .menux:after {
+        content:"";
+        position: absolute;
+        border-radius: var(--s);
+        inset: 40% 0;
+        background: var(--c);
+        transition: transform .3s calc(.3s - var(--_s,.3s));
+      }
+      
+      .menux:checked {
+        clip-path: inset(0);
+        --_p: calc(-1*var(--s));
+        --_s: 0s;
+      }
+      .menux:checked:before {
+        transform: rotate(45deg);
+      }
+      .menux:checked:after {
+        transform: rotate(-45deg);
+      }
+      .menux:focus-visible {
+        clip-path: none;
+        -webkit-mask: none;
+        border: none;
+        outline: 2px solid var(--c);
+        outline-offset: 5px;
+      }
+      .icon{
+        margin:  50px 0;
+        font-size: 20px;
+      }
+       
+    }
+    
+    .icon{
+        margin:  50px 0;
+        font-size: 20px;
+      }

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubeeSnacks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="land.css">
+    <link rel="icon" href="img2.webp">
+</head>
+<body>
+   <div class="top">
+    <div class="logo">
+        <img src="logo.png"><span>SubeeSnacks</span>
+    </div>
+    <div class="menu">
+        
+        <nav>
+        <ul>
+            <a href="#home">Home</a>
+            <a href="#snacks">Snacks</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact us</a>
+            
+        </ul>
+        </nav>
+    </div>
+    <div class="download">
+        <button>Log in</button>
+    </div>
+    <div class="menuicon">
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <input type="checkbox" role="button" aria-label="Display the menu" class="menux">
+    </div>
+   </div> 
+
+   <div class="dropdown">
+    <span class="ahome">Home</span>
+    <span class="asnacks">Snacks</span>
+    <span class="aabout">About</span>
+    <span class="acontact">Contact us</span>
+        
+   </div>
+   <div class="home" id="home">
+   <div class="center">
+    <button>Grab your offers</button>
+
+   </div>
+   <div class="ench"><h1>Ultimate Offers For</h1>
+   <h1>Your Snacks</h1>
+   </div>
+   <div class="lorem">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas beatae tempora neque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur.</p>
+
+   </div>
+   <div class="end">
+    <a href="#snacks">
+    <button>Get the Snacks</button>
+</a>
+
+   </div>
+   </div>
+   <div class="snacks" id="snacks">
+    <h2>Snacks</h2>
+    <div class="align">
+    <div class="box">
+        <img src="img2.webp">
+        <p>Tasty Burger Get ₹79</p>
+        <button>Buy Now</button>
+
+    </div>
+    <div class="box">
+        <img src="img3.jpg">
+        <p>Tasty French Fries Get ₹69</p>
+        <button>Buy Now</button>
+
+
+    </div>
+    </div>
+    <div class="align">
+    <div class="box">
+        <img src="img4.jpg">
+        <p>Tasty Momos Get ₹69</p>
+        <button>Buy Now</button>
+
+
+    </div>
+    <div class="box">
+        <img src="img5.jpeg">
+        <p>Tasty Crispy Chicken Get ₹99</p>
+        <button>Buy Now</button>
+
+
+    </div>
+    
+    </div>
+    <div class="align2">
+        <div class="box">
+            <img src="img7.jpg">
+            <p>Tasty Nuggets Get ₹69</p>
+            <button>Buy Now</button>
+
+    
+        </div>
+        <div class="box">
+            <img src="img8.jpg">
+            <p>Tasty Samosa Get ₹19</p>
+            <button>Buy Now</button>
+            
+    
+        </div>
+    </div>
+        <div class="align2">
+        <div class="box">
+            <img src="img9.webp">
+            <p>Tasty Pani poori Get ₹29</p>
+            <button>Buy Now</button>
+
+    
+        </div>
+        <div class="box">
+            <img src="img11.jpg">
+            <p>Chicken Noodles Get ₹79</p>
+            <button>Buy Now</button>
+
+    
+        </div>
+
+
+    </div>
+
+   </div>
+   <div class="about" id="about">
+        <center>
+        <h3>About us</h3>
+        <p>This snacks website was created by yokesh in 10-02-2025 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint cum tenetur, animi laudantium eligendi perferendis quia id porro provident. Aliquam recusandae porro tenetur dolorem aut facilis voluptas laudantium <quidem class="lorem60"></quidem></p>
+        </center>
+
+   </div>
+   <div class="contact" id="contact">
+    <h3>Contact us</h3>
+    <div class="searchbar">
+        <input placeholder="Search">
+
+    </div>
+    <div class="searchbar">
+        <input type="number">
+
+    </div>
+    <div class="searchbar">
+        <input type="date">
+
+    </div>
+    <div class="searchbar">
+        <input placeholder="Meassage \ Special Requirements">
+
+    </div>
+    <button>Submit</button>
+
+
+   </div>
+   <div class="icon" id="icon">
+    <center>
+        <a href="https://instagram.com/_yokee.__/">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+</center>
+   </div>
+
+
+
+
+   <script>
+
+    var menuicon = document.querySelector(".menux")
+    var dropdown = document.querySelector(".dropdown")
+    menuicon.onclick = function(){
+        dropdown.classList.toggle("show")
+
+    }
+
+    home = document.querySelector(".home")
+    snacks = document.querySelector(".snacks")
+    about = document.querySelector(".about")
+    contact = document.querySelector(".contact")
+
+    window.addEventListener('hashchange', function() {
+	// new hash value
+    if(window.location.hash==""){
+        home.scrollIntoView()
+    }
+});
+    document.querySelector(".ahome").onclick = function(){
+        home.scrollIntoView()
+        menuicon.click()
+    }
+
+    document.querySelector(".asnacks").onclick = function(){
+        snacks.scrollIntoView()
+                window.location.hash = '#snacks'
+        menuicon.click()
+    }
+    document.querySelector(".acontact").onclick = function(){
+                window.location.hash = '#contact'
+        contact.scrollIntoView()
+        menuicon.click()
+    }
+    document.querySelector(".aabout").onclick = function(){
+                window.location.hash = '#about'
+        about.scrollIntoView()
+        menuicon.click()
+    }
+   </script>
+</html>

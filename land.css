@@ -22,6 +22,7 @@ body{
     width: 100vw;
     background: #00000063;
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 .logo{
     color: aliceblue;
@@ -239,6 +240,7 @@ h3{
         height: 80vh;
         background: #00000083;
         backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
         transition: all 500ms;
     }
     .dropdown a,.dropdown span{

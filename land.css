@@ -250,7 +250,7 @@ h3{
         color: gold;
     }
     .dropdown.show{
-        right: 5px;
+        right: 1px;
     }
     .menuicon{
         display: block;

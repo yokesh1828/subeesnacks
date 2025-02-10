@@ -20,7 +20,7 @@ body{
     position: sticky;
     position: fixed;
     width: 100vw;
-    background: #00000063;
+    background: #00000083;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
 }
@@ -238,7 +238,7 @@ h3{
         right: -305px;
         top: 73.5px;
         height: 80vh;
-        background: #00000083;
+        background: #000000aa;
         backdrop-filter: blur(6px);
         -webkit-backdrop-filter: blur(6px);
         transition: all 500ms;
